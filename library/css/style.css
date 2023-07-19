@@ -1,23 +1,26 @@
 /* forum-regular - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Forum";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   src: url("../fonts/forum-v16-latin-regular.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-regular - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/inter-v12-latin-regular.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.woff2") format("woff2");
 }
 
 html {
@@ -88,7 +91,7 @@ body {
 
 .header__link:hover {
   transform: scale(1.15);
-  color:rgb(156, 179, 179);
+  color: rgb(156, 179, 179);
   cursor: pointer;
 }
 
@@ -101,8 +104,6 @@ body {
   transform: scale(1.35);
   cursor: pointer;
 }
-
-
 
 .header__link {
   font-family: "Inter";
@@ -201,19 +202,25 @@ h1 {
   line-height: 40px; /* 200% */
 }
 
+.about__inner {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .about__items {
   display: flex;
   justify-content: center;
+  gap: 25px;
 }
 
 .about__item {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 20px;
   margin-bottom: 0;
   padding-bottom: 40px;
-  width: 450px;
-  height: 560px;
+  width: 100%;
+  height: 100%;
 }
 
 h2.about__title {
@@ -230,8 +237,8 @@ h2.about__title::after {
   width: 50px;
   margin: 20px auto 10px;
   transition: 1s;
-
 }
+
 h2.about__title:hover::after {
   width: 100px;
   transition: ease-out 1s;
@@ -252,7 +259,7 @@ h2.about__title:hover::after {
   justify-content: center;
   align-items: center;
   width: 26px;
-  height: 26px
+  height: 26px;
 }
 
 .button {
@@ -270,9 +277,197 @@ h2.about__title:hover::after {
 
 .wrapper__button-img:hover {
   transform: scale(1.15);
-  color:rgb(156, 179, 179);
+  color: rgb(27, 216, 216);
   cursor: pointer;
 }
 /*style about end*/
 
+/*style favorites start*/
 
+.favorites__title {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+h2.favorites__title {
+  font-weight: 400;
+  font-size: 40px;
+  color: #0c0c0e;
+  text-align: center;
+}
+
+h2.favorites__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #0c0c0e;
+  width: 50px;
+  margin: 20px auto 10px;
+  transition: 1s;
+}
+
+h2.favorites__title:hover::after {
+  width: 100px;
+  transition: ease-out 1s;
+}
+
+h3.favorites__info {
+  color: #000;
+  text-align: start;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.radio {
+  color: #000;
+  font-size: 20px;
+  line-height: normal;
+  display: flex;
+  padding-bottom: 42px;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+input {
+  cursor: pointer;
+}
+
+.real__radio-btn {
+  width: 0;
+  height: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.label__radio-btn {
+  margin-right: 127px;
+}
+
+.custom__radio-btn {
+  display: inline-block;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.custom__radio-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  transform: translate(-50%, -50%) scale(0);
+  left: 50%;
+  top: 50%;
+  transition: 0.2s ease-in;
+}
+
+.real__radio-btn:checked + .custom__radio-btn::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*style books*/
+.first__book {
+  max-width: 590px;
+  margin-left: 20px;
+  border: 1px solid #000000;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+}
+
+.book__inner {
+  display: block;
+}
+
+h3.staff__picks {
+  display: block;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: start;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+h3.staff__picks::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #bb945f;
+  width: 60px;
+  transition: 1s;
+}
+
+h3.staff__picks:hover::after {
+  width: 100px;
+  transition: ease-out 1s;
+}
+
+.book_item {
+  justify-self:center;
+  margin-left: 20px;
+}
+.name__book {
+  color: #000;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.autor__book {
+  color: #000;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.text_paragraph {
+  width: 355px;
+  height: 320px;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
