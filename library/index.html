@@ -60,7 +60,7 @@
             </section>
             <!--section welcome!-->
 
-            <!--section about!-->
+            <!--section about start!-->
             <section class="about">
                 <div class="container">
                     <h2 class="about__title">
@@ -84,39 +84,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <!--carousel-slider start!-->
+                    <div class="carousel__pagination">
+                        <div class="carousel__button">
+                            <div class="wrapper__button-img">
+                                <div class="button">
+                                    <img class="button-img" src="./img/svg/pagination_img/active_lide_pagination.svg"
+                                        alt="active_pagination">
+                                </div>
 
-                <!--carousel-slider!-->
-                <div class="carousel__pagination">
-                    <div class="carousel__button">
-                        <div class="wrapper__button-img">
-                            <div class="button">
-                                <img class="button-img" src="./img/svg/pagination_img/active_lide_pagination.svg"
-                                    alt="active_pagination">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel__button">
-                        <div class="wrapper__button-img">
-                            <div class="button">
-                                <img class="button-img-center" src="./img/svg/pagination_img/slide_pagination.svg"
-                                    alt="pagination_1">
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel__button">
-                        <div class="wrapper__button-img">
-                            <div class="button">
-                                <img class="button-img" src="./img/svg/pagination_img/slide_pagination.svg"
-                                    alt="pagination_1">
+                        <div class="carousel__button">
+                            <div class="wrapper__button-img">
+                                <div class="button">
+                                    <img class="button-img-center" src="./img/svg/pagination_img/slide_pagination.svg"
+                                        alt="pagination_1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__button">
+                            <div class="wrapper__button-img">
+                                <div class="button">
+                                    <button class="button__bg"></button>
+                                    <!--<img class="button-img" src="./img/svg/pagination_img/slide_pagination.svg"
+                                        alt="pagination_1">!-->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--carousel-slider!-->
+            <!--carousel-slider end!-->
 
-            <!--section favorites!-->
+            <!--section favorites start!-->
             <section class="favorites">
                 <div class="container">
                     <h2 class="favorites__title">
@@ -126,11 +128,11 @@
                         Pick favorites of season
                     </h3>
 
-                    <!--radio_btn!-->
+                    <!--radio_btn start!-->
                     <div class="radio">
                         <div class="radio__btn">
-                            <label for="winter" class="label__radio-btn">
-                                <input type="radio" name="radio" value="winter" id="winter" class="real__radio-btn"
+                            <label for="winter" class="label__radio-btn-winter">
+                                <input type="radio" name="radio" value="winter" id="winter" class="real__radio-btn "
                                     checked>
                                 <span class="custom__radio-btn"></span>
                                 Winter
@@ -153,63 +155,196 @@
                             </label>
                         </div>
                     </div>
-                    <!--radio btn!-->
+                    <!--radio btn end!-->
 
-                    <div class="favorites__item">
-                        <div class="book">
-                            <div class="first__book">
-                                <div class="book__inner">
-                                    <h3 class="staff__picks">Staff Picks</h3>
-                                    <p class="name__book">
-                                        The Book Eaters
-                                    </p>
-                                    <p class="autor__book">
-                                        By Sunyi Dean
-                                    </p>
-                                    <p class="text_paragraph">An unusual sci-fi story about a book eater woman who tries
-                                        desperately to
-                                        save
-                                        her dangerous mind-eater son from tradition and certain death. Complete with
-                                        dysfunctional family values, light Sapphic romance, and a strong, complex
-                                        protagonist. Not for the faint of heart.
-                                    </p>
+                    <!--favorites__books start-->
+                    <div class="favorites__books">
+                        <div class="first__book">
+                            <div class="book__inner">
+                                <h3 class="staff__picks">Staff Picks</h3>
+                                <h4 class="name__book">
+                                    The Book Eaters
+                                </h4>
+                                <h4 class="autor__book">
+                                    By Sunyi Dean
+                                </h4>
+                                <p class="text_paragraph">An unusual sci-fi story about a book eater woman who tries
+                                    desperately to
+                                    save
+                                    her dangerous mind-eater son from tradition and certain death. Complete with
+                                    dysfunctional family values, light Sapphic romance, and a strong, complex
+                                    protagonist. Not for the faint of heart.
+                                </p>
+                                <button type="submit" class="buy__for-submit"> Buy</button>
+                                <div class="book_inner-img">
+                                    <img class="staff__pick-img" src="../library/img/book_img/book_1.png"
+                                        alt="StaffcPicks">
                                 </div>
                             </div>
-
-
-
-                            <div class="second__book">
-                                <div class="first__book">
-                                    <div class="book__inner">
-                                        <h3 class="staff__picks">Staff Picks</h3>
-                                        <p class="name__book">
-                                            The Book Eaters
-                                        </p>
-                                        <p class="autor__book">
-                                            By Sunyi Dean
-                                        </p>
-                                        <p class="text_paragraph">An unusual sci-fi story about a book eater woman who
-                                            tries
-                                            desperately to
-                                            save
-                                            her dangerous mind-eater son from tradition and certain death. Complete with
-                                            dysfunctional family values, light Sapphic romance, and a strong, complex
-                                            protagonist. Not for the faint of heart.
-                                        </p>
-                                    </div>
+                        </div>
+                        <div class="first__book">
+                            <div class="book__inner">
+                                <h3 class="staff__picks">Staff Picks</h3>
+                                <h4 class="name__book">
+                                    Cackle
+                                </h4>
+                                <h4 class="autor__book">
+                                    By Rachel Harrison
+                                </h4>
+                                <p class="text_paragraph">
+                                    Are your Halloween movies of choice The Witches of Eastwick and Practical Magic?
+                                    Look no further than here - where a woman recovering from a breakup moves to a
+                                    quaint town in upstate New York and befriends a beautiful witch.
+                                </p>
+                                <button type="submit" class="buy__for-submit"> Buy</button>
+                                <div class="book_inner-img">
+                                    <img class="staff__pick-img" src="../library/img/book_img/book_2.png"
+                                        alt="StaffcPicks">
                                 </div>
                             </div>
-                            <div class="third__book"></div>
-                            <div class="fourth__book"></div>
-                            <div class="fifth__book"></div>
-                            <div class="sixth__book"></div>
-                            <div class="seventh__book"></div>
-                            <div class="one__book"></div>
-                            <div class="one__book"></div>
-                            <div class="one__book"></div>
+                        </div>
+                        <div class="first__book">
+                            <div class="book__inner">
+                                <h3 class="staff__picks">Staff Picks</h3>
+                                <h4 class="name__book">
+                                    Dante: Poet of the Secular World
+
+                                </h4>
+                                <h4 class="autor__book">
+                                    By Erich Auerbach
+                                </h4>
+                                <p class="text_paragraph">
+                                    Auerbach's engaging book places the 'Comedy' within the
+                                    tradition of epic, tragedy, and philosophy in general, arguing for Dante's
+                                    uniqueness as one who raised the individual and his drama of soul into something of
+                                    divine significance—an inspired introduction to Dante's main themes.
+                                </p>
+                                <button type="submit" class="buy__for-submit"> Buy</button>
+                                <div class="book_inner-img">
+                                    <img class="staff__pick-img" src="../library/img/book_img/book_3.png"
+                                        alt="StaffcPicks">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first__book">
+                            <div class="book__inner">
+                                <h3 class="staff__picks">Staff Picks</h3>
+                                <h4 class="name__book">
+                                    The Last Queen
+
+                                </h4>
+                                <h4 class="autor__book">
+                                    By Clive Irving
+                                </h4>
+                                <p class="text_paragraph">
+                                    A timely and revelatory new biography of Queen Elizabeth (and her family) exploring
+                                    how the Windsors have evolved and thrived as the modern world has changed around
+                                    them.
+                                </p>
+                                <button type="submit" class="own__for-submit" disabled>Own</button>
+                                <div class="book_inner-img">
+                                    <img class="staff__pick-img" src="../library/img/book_img/book_4.png"
+                                        alt="StaffcPicks">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
             </section>
+
+            <!--section coffee shop start!-->
+            <section class="coffe_shop">
+                <div class="container">
+                    <h2 class="coffe_shop__title">
+                        Coffee shop
+                    </h2>
+                    <h3 class="coffe-shop__subtitle">
+                        In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and
+                        friendly conversation.
+                        you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and
+                        also you can try desserts from bakery.
+                    </h3>
+                    <div class="menu">
+                        <div class="coffee-tea__menu">
+                            <ul class="coffee-tea__item">
+                                <li class="coftea__title">
+                                    Coffee & Tea </li>
+                                <li class="coftea__list">
+                                    <span class="catolog__list-item_name">Cold Brew Coffee</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span span class="catolog__list-item_price">$3</span>
+                                </li>
+                                <li class="coftea__list">
+                                    <span class="catolog__list-item_name">French Press Pot</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span span class="catolog__list-item_price">$5</span>
+                                </li>
+                                <li class="coftea__list">
+                                    <span class="catolog__list-item_name">Espresso</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span span class="catolog__list-item_price">$2</span>
+                                </li>
+                                <li class="coftea__list">
+                                    <span class="catolog__list-item_name">Cappuccino</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span span class="catolog__list-item_price">$4</span>
+
+                                </li>
+                                <li class="coftea__list">
+                                    <span class="catolog__list-item_name">Hot tea</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span span class="catolog__list-item_price">$2</span>
+                                </li>
+                                <li class="coftea__list">
+                                    <span  class="catolog__list-item_name">Cold tea</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$2</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dessert__menu">
+                            <ul class="dessert__item">
+                                <li class="dessert__title">
+                                    Desserts & Cakes
+                                </li>
+                                <li class="dessert__list">
+                                    <span class="catolog__list-item_name">Forest Gateau</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$16</span>
+                                </li>
+                                <li class="dessert__list">
+                                    <span class="catolog__list-item_name">Blue Moon</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$16</span>
+                                </li>
+                                <li class="dessert__list">
+                                    <span class="catolog__list-item_name">Truffle Cake</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$15</span>
+                                </li>
+                                <li class="dessert__list">
+                                    <span class="catolog__list-item_name">Chocolate Cake</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$18</span>
+                                </li>
+                                <li class="dessert__list">
+                                    <span class="catolog__list-item_name">Poet’s Dream Cake</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$16</span>
+                                </li>
+                                <li class="dessert__list">
+                                    <span class="catolog__list-item_name">Pineapple Cake</span>
+                                    <span class="coftea__list-line-center"></span>
+                                    <span class="catolog__list-item_price">$14</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section coffee shop end!-->
         </main>
     </div>
 </body>
