@@ -41,6 +41,11 @@ body {
   box-sizing: inherit;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
 /*style header start*/
 .wrapper__container {
   width: 1440px;
@@ -155,7 +160,7 @@ h1 {
     180deg,
     #0c0c0e 0%,
     #0c0c0e 0.01%,
-    rgba(18, 18, 21, 0.1) 100%
+    rgba(18, 18, 21, 0.1) 50%
   );
 }
 
@@ -741,13 +746,26 @@ h3.coffe-shop__subtitle {
 
 /*style dessert menu end!*/
 
+/*style our contacts start!*/
+
+.our_contacts__title {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
 h2.our_contacts__title {
   font-weight: 400;
   font-size: 40px;
   color: #0c0c0e;
   text-align: center;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 44px;
 }
 
 h2.our_contacts__title::after {
@@ -769,7 +787,8 @@ h2.our_contacts__title:hover::after {
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
-  margin-top: 60px;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contact__item {
@@ -834,4 +853,189 @@ h2.our_contacts__title:hover::after {
 .contact__title-senier {
   margin-bottom: 20px;
   margin-top: 40px;
+}
+
+/*style our contacts end!*/
+
+/*style digital library cards start!*/
+
+.digital_library_cards {
+  margin-top: 20px;
+}
+
+.digital_library_cards__title {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+h2.digital_library_cards__title {
+  font-weight: 400;
+  font-size: 40px;
+  color: #0c0c0e;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+h2.digital_library_cards__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #0c0c0e;
+  width: 50px;
+  margin: 20px auto 3px;
+  transition: 1s;
+}
+
+h2.digital_library_cards__title:hover::after {
+  width: 100px;
+  transition: ease-out 1s;
+}
+.library__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-library__card {
+  position: relative;
+  width: 600px;
+  height: 386px;
+  border: 3px solid;
+  border-color: #bb945f;
+}
+
+.library-card__bg {
+  position: absolute;
+  width: 560px;
+  height: 272px;
+  left: 20px;
+  top: 20px;
+  background: #bb945f;
+}
+
+.bg__title {
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.find__card {
+  position: absolute;
+  bottom: 25px;
+  margin: 0px 20px;
+  gap: 10px;
+}
+
+.find-card__label {
+  width: 100%;
+}
+
+.find-card__text {
+  height: 66px;
+  padding: 5px 20px;
+  color: #8e8e8e;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin-top: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.check-card__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  align-items: center;
+  padding: 10px 40px;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+}
+
+.find_library__sub {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-left: 158px;
+  margin-bottom: 30px;
+  margin-top: 61px;
+}
+.find-library__card {
+  margin-left: 20px;
+}
+
+.right-cards__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-cards__block {
+  display: flex;
+  text-align: end;
+  margin-top: 61px;
+}
+
+.get__card {
+  margin-top: 2px;
+}
+
+.get-card__title {
+  color: #000;
+  text-align: end;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.get-card__info {
+  width: 457px;
+  color: #000;
+  text-align: end;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 0.4px;
+  margin-bottom: 0;
+}
+
+.get-card__btn {
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  margin-left: 19px;
+  margin-top: 35px;
 }
