@@ -41,11 +41,10 @@ body {
   box-sizing: inherit;
 }
 
-/*style header end*/
+/*style header start*/
 .wrapper__container {
   width: 1440px;
   margin: 0 auto;
-  max-width: 100%;
 }
 
 .header {
@@ -66,7 +65,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 .header__nav {
@@ -74,14 +73,16 @@ body {
 }
 
 .heder__list {
+  display: flex;
+  justify-content: flex-end;
   padding: 0;
 }
 
 .header__item {
   display: inline-flex;
-  align-items: flex-start;
+  align-items: end;
   gap: 30px;
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .header__link {
@@ -131,27 +132,42 @@ h1 {
 }
 /*style header end*/
 
-/*style welcome start*/
-.welcome {
-  background-image: url(../img/welcome.png);
-  background-size: cover;
-  height: 600px;
+.container {
   width: 1440px;
   margin: 0 auto;
-  color: rgba(255, 255, 255, 1);
-  display: flex;
-  align-items: center;
-  padding-bottom: 20px;
 }
 
-.welcome__bg {
+/*style welcome start*/
+.welcome {
+  display: flex;
+  height: 600px;
+  background: url(../img/welcome_bg.png) no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 1);
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    180deg,
+    #0c0c0e 0%,
+    #0c0c0e 0.01%,
+    rgba(18, 18, 21, 0.1) 100%
+  );
+}
+
+.welcome__bg-title {
+  position: absolute;
   display: flex;
   width: 600px;
   height: 220px;
   padding: 35px 40px;
   justify-content: center;
   align-items: center;
-  margin-top: 55px;
+  margin-top: 220px;
   background-color: rgba(12, 12, 14, 1);
 }
 
@@ -171,10 +187,6 @@ h1 {
 /*style welcome end*/
 
 /*style about start*/
-.container {
-  width: 1440px;
-  margin: 0 auto;
-}
 
 .about__title {
   text-align: center;
@@ -192,8 +204,7 @@ h1 {
 
 .about__info {
   color: #000;
-  margin-bottom: 0;
-  padding-bottom: 15px;
+  margin-top: 40px;
   text-align: center;
   font-family: "Inter";
   font-size: 20px;
@@ -203,6 +214,7 @@ h1 {
 }
 
 .about__inner {
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -216,9 +228,7 @@ h1 {
 .about__item {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   margin-bottom: 0;
-  padding-bottom: 40px;
   width: 100%;
   height: 100%;
 }
@@ -248,6 +258,7 @@ h2.about__title:hover::after {
   max-width: 1440px;
   display: flex;
   justify-content: center;
+  margin-top: 36px;
 }
 
 .carousel__button {
@@ -310,8 +321,7 @@ h2.favorites__title {
   font-size: 40px;
   color: #0c0c0e;
   text-align: center;
-  margin-top: 42px;
-  margin-bottom: 42px;
+  margin-top: 54px;
 }
 
 h2.favorites__title::after {
@@ -338,7 +348,7 @@ h3.favorites__info {
   font-weight: 700;
   line-height: normal;
   margin-left: 20px;
-  margin-bottom: 42px;
+  margin-top: 40px;
 }
 
 .radio {
@@ -364,6 +374,10 @@ input {
   cursor: pointer;
 }
 
+.radio__btn {
+  margin-top: 20px;
+}
+
 .real__radio-btn {
   width: 0;
   height: 0;
@@ -383,7 +397,7 @@ input {
   background: #fff;
   border: 2px solid #000;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .custom__radio-btn::before {
@@ -404,9 +418,8 @@ input {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.label__radio-btn-winter {
+.label__radio-btn:has(.real__radio-btn:checked) {
   font-weight: 700;
-  margin-right: 68px;
 }
 
 /*style favorites books start*/
@@ -414,14 +427,14 @@ input {
 .favorites__books {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
   vertical-align: top;
+  justify-content: space-between;
+  margin-right: 0;
 }
 
 .first__book {
   width: 550px;
-  margin: 40px 20px;
+  margin: 38px 60px 0px 20px;
   border: 1px solid #000000;
 }
 
@@ -437,7 +450,7 @@ h3.staff__picks {
   text-transform: capitalize;
   text-align: start;
   margin-top: 15px;
-  margin-left: 15px;
+  margin-left: 17px;
 }
 
 h3.staff__picks::after {
@@ -464,6 +477,7 @@ h3.staff__picks:hover::after {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .autor__book {
@@ -475,19 +489,18 @@ h3.staff__picks:hover::after {
   line-height: 40px; /* 266.667% */
   letter-spacing: 2px;
   margin-left: 20px;
-  margin-bottom: 0;
-  padding-bottom: 20px;
+  margin-top: 0;
 }
 
 .text_paragraph {
-  width: 355px;
+  width: 357px;
   height: 320px;
   color: #000;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 266.667% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   margin-left: 20px;
@@ -503,8 +516,12 @@ h3.staff__picks:hover::after {
   position: absolute;
   transform: translateY(-100%);
   margin-left: 390px;
-  margin-top: 5px;
-  vertical-align: top;
+  margin-bottom: 0px;
+  vertical-align: bottom;
+}
+
+.book_inner-img img {
+  margin-bottom: -5px;
 }
 
 /*style favorites books end*/
@@ -535,7 +552,8 @@ h3.staff__picks:hover::after {
   font-weight: 700;
   border: 1px solid #0c0c0e;
   border-radius: 2px;
-  background: #bb945f;
+  border-color: #bb945f;
+  color: #bb945f;
   margin-bottom: 15px;
   margin-left: 20px;
 }
@@ -561,7 +579,7 @@ h2.coffe_shop__title {
   font-size: 40px;
   color: #0c0c0e;
   text-align: center;
-  margin-top: 42px;
+  margin-top: 58px;
   margin-bottom: 42px;
 }
 
@@ -571,7 +589,7 @@ h2.coffe_shop__title::after {
   height: 1px;
   background: #0c0c0e;
   width: 50px;
-  margin: 20px auto 3px;
+  margin: 16px auto 3px;
   transition: 1s;
 }
 
@@ -587,9 +605,10 @@ h3.coffe-shop__subtitle {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
-
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*style coffe-tea menu start!*/
@@ -617,7 +636,6 @@ h3.coffe-shop__subtitle {
   letter-spacing: 2px;
   text-transform: capitalize;
   list-style-type: none;
-  margin-top: 40px;
   text-align: start;
 }
 
@@ -663,7 +681,7 @@ h3.coffe-shop__subtitle {
   width: 100px;
   margin: 50px auto 7px 3px;
   margin-left: 60px;
-  margin-right:60px;
+  margin-right: 60px;
 }
 
 /*style coffe-tea menu end!*/
@@ -709,4 +727,111 @@ h3.coffe-shop__subtitle {
   margin-right: 60px;
 }
 
+.descatolog__list-item_name {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: end;
+}
+
 /*style dessert menu end!*/
+
+h2.our_contacts__title {
+  font-weight: 400;
+  font-size: 40px;
+  color: #0c0c0e;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+h2.our_contacts__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #0c0c0e;
+  width: 50px;
+  margin: 20px auto 3px;
+  transition: 1s;
+}
+
+h2.our_contacts__title:hover::after {
+  width: 100px;
+  transition: ease-out 1s;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  margin-top: 60px;
+}
+
+.contact__item {
+  padding: 0;
+  margin-top: 0;
+}
+
+.contact__title {
+  color: #000;
+  text-align: start;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.contact__title-senier {
+  color: #000;
+  text-align: start;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+.contact__info {
+  color: #000;
+  text-align: start;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.senier__staff {
+  padding: 0;
+}
+
+.contact__link_senier {
+  margin-top: 20px;
+}
+
+.contact__title-senier {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
