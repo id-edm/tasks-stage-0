@@ -10,66 +10,64 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__position">
-                <h1>
-                    Brooklyn Public Library
-                </h1>
+    <div class="wrapper__container">
+        <header class="header">
+            <div class="container">
+                <div class="header__position">
+                    <h1>
+                        Brooklyn Public Library
+                    </h1>
 
-                <div class="header__nav__position">
-                    <nav class="header__nav">
-                        <ul class="heder__list">
-                            <li class="header__item">
-                                <a class="header__link" href="#">About</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="#">Favorites</a>
-                            </li>
-                            <li class=" header__item">
-                                <a class="header__link" href="#">Coffee shop</a>
-                            </li>
-                            <li class=" header__item">
-                                <a class="header__link" href="#">Contacts</a>
-                            </li>
-                            <li class=" header__item">
-                                <a class="header__link" href="#">Library Card</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__image">
-                        <img src="./img/svg/icon_profile.svg" alt="image profile">
+                    <div class="header__nav__position">
+                        <nav class="header__nav">
+                            <ul class="heder__list">
+                                <li class="header__item">
+                                    <a class="header__link" href="#about">About</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#favorites">Favorites</a>
+                                </li>
+                                <li class=" header__item">
+                                    <a class="header__link" href="#coffee-shop">Coffee shop</a>
+                                </li>
+                                <li class=" header__item">
+                                    <a class="header__link" href="#contacts">Contacts</a>
+                                </li>
+                                <li class=" header__item">
+                                    <a class="header__link" href="#library-card">Library Card</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__image">
+                            <img src="./img/svg/icon_profile.svg" alt="image profile">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main">
+        <main class="main">
 
-        <!--main!-->
-        <!--section welcome!-->
+            <!--main!-->
+            <!--section welcome!-->
+            <section class="welcome">
+                <div class="wrapper__welcome">
+                    <div class="overlay__item">
+                        <div class="welcome__bg">
+                            <h2 class="welcome__title">
+                                Welcome&nbsp; <br> to the Brooklyn <br> Library
+                            </h2>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+            <!--section welcome end!-->
 
-        <section class="welcome">
-            <div id="overlay"></div>
-            <div class="container">
-                <div class="welcome__bg-title">
-                    <h2 class="welcome__title">
-                        &nbsp;Welcome &nbsp; <br>
-                        to the Brooklyn <br>
-                        Library
-                    </h2>
-                </div>
-            </div>
-        </section>
-        <!--section welcome!-->
-
-        <div class="wrapper__container">
             <!--container!-->
             <!--section about start!-->
             <section class="about">
                 <div class="container">
-                    <h2 class="about__title">
+                    <h2 class="section__title-about" id="about">
                         About
                     </h2>
                     <h3 class="about__info">The Brooklyn Library is a free workspace, a large number of books and a cozy
@@ -96,17 +94,7 @@
                         <div class="carousel__button">
                             <div class="wrapper__button-img">
                                 <div class="button">
-                                    <img class="button-img" src="./img/svg/pagination_img/active_lide_pagination.svg"
-                                        alt="active_pagination">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="carousel__button">
-                            <div class="wrapper__button-img">
-                                <div class="button">
-                                    <img class="button-img-center" src="./img/svg/pagination_img/slide_pagination.svg"
-                                        alt="pagination_1">
+                                    <button class="button-active__bg"></button>
                                 </div>
                             </div>
                         </div>
@@ -114,8 +102,13 @@
                             <div class="wrapper__button-img">
                                 <div class="button">
                                     <button class="button__bg"></button>
-                                    <!--<img class="button-img" src="./img/svg/pagination_img/slide_pagination.svg"
-                                        alt="pagination_1">!-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__button">
+                            <div class="wrapper__button-img">
+                                <div class="button">
+                                    <button class="button__bg"></button>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +120,7 @@
             <!--section favorites start!-->
             <section class="favorites">
                 <div class="container">
-                    <h2 class="favorites__title">
+                    <h2 class="section__title-favorites" id="favorites">
                         Favorites
                     </h2>
                     <h3 class="favorites__info">
@@ -138,7 +131,7 @@
                     <div class="radio">
                         <div class="radio__btn">
                             <label for="winter" class="label__radio-btn">
-                                <input type="radio" name="radio" value="winter" id="winter" class="real__radio-btn "
+                                <input type="radio" name="radio" value="winter" id="winter" class="real__radio-btn"
                                     checked>
                                 <span class="custom__radio-btn"></span>
                                 Winter
@@ -262,7 +255,7 @@
             <!--section coffee shop start!-->
             <section class="coffe_shop">
                 <div class="container">
-                    <h2 class="coffe_shop__title">
+                    <h2 class="section__title-coffe-shop" id="coffee-shop">
                         Coffee shop
                     </h2>
                     <h3 class="coffe-shop__subtitle">
@@ -356,7 +349,7 @@
 
             <!--our contacts start!-->
             <section class="our_contacts">
-                <h2 class="our_contacts__title">
+                <h2 class="section__title-contact"  id="contacts">
                     Our Contacts
                 </h2>
                 <div class="contacts__wrapper">
@@ -366,14 +359,14 @@
                                 For all Library inquiries:
                             </li>
                             <li class="contact__info">
-                                <a class="contact__link" href="tel:(617) 730-2370">Please call (617) 730-2370</a>
+                                <a class="contact__link" href="tel:6177302370">Please call: (617) 730-2370</a>
                             </li>
                             <li class="contact__info">
-                                <a class="contact__link" href="tel:(617) 730-2370">For TTY service, please call
+                                <a class="contact__link" href="tel:6177302370">For TTY service, please call:
                                     (617)730-2370</a>
                             </li>
                             <li class="contact__info">
-                                <a class="contact__link" href="tel:(617) 730-2385">Putterham Library: (617) 730-2385</a>
+                                <a class="contact__link" href="tel:6177302385">Putterham Library: (617) 730-2385</a>
                             </li>
                         </ul>
                         <ul class="senier__staff">
@@ -387,15 +380,15 @@
                         </ul>
                     </div>
                     <div class="wrapper__map">
-                        <img src="../library/img/map.png" alt="map">
+                        <img src="../library/img/map.png" alt="map" id="contact_map">
                     </div>
                 </div>
             </section>
             <!--section our contacts end!-->
 
             <!--section digital library cards start!-->
-            <section class="digital_library_cards">
-                <h2 class="digital_library_cards__title">
+            <section class="digital_library_cards" >
+                <h2 class="section__title-cards" id="library-card">
                     Digital Library Cards
                 </h2>
                 <div class="library__cards">
@@ -430,7 +423,8 @@
                                 Get a reader card
                             </h3>
                             <p class="get-card__info">
-                                You will be able to see a reader card after logging into account or you can register a new
+                                You will be able to see a reader card after logging into account or you can register a
+                                new
                                 account
                             </p>
                             <button class="get-card__btn">
@@ -443,9 +437,60 @@
                     </div>
                 </div>
             </section>
+            <!--section digital library cards end!-->
 
-
-        </div>
+            <!--section footer start!-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="footer__contact">
+                            <a href="#contact_map" class="address">
+                                286 Cadman Plaza, New York, NY 11238, United States
+                            </a>
+                            <ul class="footer__social">
+                                <li class="footer__social-item">
+                                    <a href="https://www.facebook.com/BrooklynPublicLibraryFamily"
+                                        class="footer__social-link">
+                                        <img src="../library/img/svg/facebook-f.svg" alt="Facebook"
+                                            class="footer__social-img">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="https://instagram.com/bklynlibrary" class="footer__social-link">
+                                        <img src="../library/img/svg/instagram_f.svg" alt="Instagram"
+                                            class="footer__social-img">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a href="http://twitter.com/bklynlibrary" class="footer__social-link">
+                                        <img src="../library/img/svg/twitter-f.svg" alt="Twitter"
+                                            class="footer__social-img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="opening-hours__title">
+                            <p class="opening-hours__item"><time datetime="PT11H">Mon - Fri <br> 08:00 am - 07:00
+                                    pm</time></p>
+                            <p class="opening-hours__item"><time datetime="PT8H">Sat - Sun <br> 10:00 am - 06:00
+                                    pm</time></p>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="content-footer__bottom">
+                            <time datetime="2023">2023</time>
+                            <a class="rs-school__link" href="https://rs.school/js-stage0/">
+                                The Rolling Scopes School
+                            </a>
+                            <a class="my-github__link" href="https://github.com/id-edm">
+                                Ivan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--section footer end!-->
+    </div>
     </main>
 </body>
 
