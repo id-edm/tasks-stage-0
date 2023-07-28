@@ -102,7 +102,7 @@ p {
 }
 
 .header__link:hover {
-  color: rgb(156, 179, 179);
+  color: #bb945f;
   cursor: pointer;
 }
 
@@ -149,17 +149,16 @@ h1 {
 
 /*style welcome start*/
 .welcome {
-  
 }
 
 .overlay__item {
   width: 1440px;
   background: linear-gradient(
     180deg,
-   #0C0C0E 0%, 
-   #0C0C0E 0.01%, 
-   rgba(18, 18, 21, 0.10) 
-   50%);
+    #0c0c0e 0%,
+    #0c0c0e 0.01%,
+    rgba(18, 18, 21, 0.1) 50%
+  );
   height: 300px;
 }
 
@@ -171,7 +170,6 @@ h1 {
   margin: 0 auto;
   color: rgba(255, 255, 255, 1);
 }
-
 
 .welcome__bg {
   display: flex;
@@ -197,25 +195,10 @@ h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin: 0;
- 
 }
 /*style welcome end*/
 
-
 /*style about start*/
-
-.section__title {
-  text-align: center;
-  color: #0c0c0e;
-  font-family: "Forum";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* 100% */
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  margin-top: 20px;
-}
 
 .section__title-about {
   text-align: center;
@@ -240,7 +223,6 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-
 }
 
 .about__inner {
@@ -263,14 +245,14 @@ h1 {
   height: 100%;
 }
 
-h2.section__title {
+h2 {
   font-size: 40px;
   color: #0c0c0e;
   text-align: center;
   margin-top: 58px;
 }
 
-h2.section__title::after {
+h2::after {
   content: "";
   display: block;
   height: 1px;
@@ -280,7 +262,7 @@ h2.section__title::after {
   transition: 1s;
 }
 
-h2.section__title:hover::after {
+h2:hover::after {
   width: 100px;
   transition: ease-out 1s;
 }
@@ -320,7 +302,7 @@ h2.section__title:hover::after {
   height: 16px;
   border: 0;
   padding: 0;
-  background: #BB945F;
+  background: #bb945f;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -669,23 +651,12 @@ h3.coffe-shop__subtitle {
   list-style-type: none;
 }
 
-.coftea__list-line-center span::after {
-  content: "";
-  display: inline-block;
-  height: 1px;
-  background: #bb945f;
-  width: 100px;
-  margin: 50px auto 7px 3px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
 /*style coffe-tea menu end!*/
 
 /*style dessert menu start!*/
 
 .dessert__menu {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .dessert__item {
@@ -719,8 +690,9 @@ h3.coffe-shop__subtitle {
   height: 1px;
   background: #bb945f;
   width: 100px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-bottom: 5px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 .descatolog__list-item_name {
@@ -881,12 +853,12 @@ h3.coffe-shop__subtitle {
 .find__card {
   position: absolute;
   bottom: 25px;
-  margin: 0px 20px;
+  margin: 0px 16px;
   gap: 10px;
 }
 
 .find-card__label {
-  width: 100%;
+  width: 520px;
 }
 
 .find-card__text {
@@ -904,11 +876,17 @@ h3.coffe-shop__subtitle {
   border: 1px solid;
   border-radius: 10px;
   width: 100%;
+  transition: ease-in 0.3s
 }
+
+.find-card__text:hover{;
+  cursor: text;
+}
+
 
 .check-card__btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   left: 50%;
   transform: translate(-50%);
   padding: 10px 40px;
@@ -922,8 +900,16 @@ h3.coffe-shop__subtitle {
   letter-spacing: 1px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
-  
+  border-radius: 2px;
+  transition: ease-in 0.3s;
 }
+
+.check-card__btn:hover,
+.check-card__btn:active {
+  background-color: #bb945f;
+  cursor: pointer;
+}
+
 
 .find_library__sub {
   color: #000;
@@ -965,6 +951,8 @@ h3.coffe-shop__subtitle {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.6px;
+  margin-right: 20px;
+  margin-bottom: 32px;
 }
 
 .get-card__info {
@@ -978,14 +966,31 @@ h3.coffe-shop__subtitle {
   line-height: 40px; /* 200% */
   letter-spacing: 0.4px;
   margin-bottom: 0;
+  margin-right: 22px;
 }
 
 .get-card__btn {
   padding: 10px 15px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
-  margin-left: 19px;
+  margin-right: 19px;
   margin-top: 35px;
+  transition: ease-out 0.25s;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.get-card__btn:hover,
+.get-card__btn:active {
+  background-color: #bb945f;
+  cursor: pointer;
+  transform: scale(1.15);
 }
 
 /*style digital library cards end!*/
@@ -1007,7 +1012,7 @@ h3.coffe-shop__subtitle {
   font-weight: 400;
   line-height: 20px;
   padding: 20px 20px;
-  margin-top: 41px;
+  margin-top: 40px;
 }
 
 .address {
@@ -1019,6 +1024,12 @@ h3.coffe-shop__subtitle {
   margin-bottom: 3px;
 }
 
+.address:hover {
+  color: #bb945f;
+}
+
+
+
 .footer__social {
   display: flex;
   gap: 15px;
@@ -1026,6 +1037,15 @@ h3.coffe-shop__subtitle {
   list-style-type: none;
   text-decoration: none;
   color: inherit;
+}
+
+.footer__social {
+  fill: #F5EFDB;
+}
+
+.footer__social svg:hover {
+  fill:#bb945f;
+  transform: scale(1.15);
 }
 
 .opening-hours__title {
@@ -1037,7 +1057,6 @@ h3.coffe-shop__subtitle {
 .opening-hours__item {
   padding-bottom: 10px;
 }
-
 
 .footer__bottom {
   color: #fff;
@@ -1059,19 +1078,24 @@ h3.coffe-shop__subtitle {
   background: #ffffff;
 }
 
-
 .content-footer__bottom {
   display: flex;
   justify-content: space-between;
   background-color: #0c0c0e;
   color: #fff;
-  padding: 44px 20px;
-  
+  padding: 44px 0px;
 }
 
 .content-footer__bottom a {
   text-decoration: none;
   color: inherit;
+  transition: ease-in 0.05s;
 }
+
+.content-footer__bottom a:hover {
+  color: #bb945f;
+}
+
+
 
 /*style footer end!*/
