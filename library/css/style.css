@@ -33,6 +33,7 @@ body {
   font-weight: 600;
   font-family: "Forum";
   margin: 0;
+  background:#ececec
 }
 
 *,
@@ -56,6 +57,7 @@ p {
 .wrapper__container {
   width: 1440px;
   margin: 0 auto;
+  background: #fff;
 }
 
 .header {
@@ -188,7 +190,7 @@ h1 {
   align-items: center;
   margin-top: 55px;
   background-color: rgba(12, 12, 14, 1);
-  margin-top: 218px;
+  margin-top: 235px;
 }
 
 .welcome__title {
@@ -223,7 +225,7 @@ h1 {
 
 .about__info {
   color: #000;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
   font-family: "Inter";
   font-size: 20px;
@@ -337,7 +339,7 @@ h2:hover::after {
   line-height: 40px; /* 100% */
   letter-spacing: 2px;
   text-transform: capitalize;
-  margin-top: 56px;
+  margin-top: 52px;
 }
 
 h3.favorites__info {
@@ -349,7 +351,7 @@ h3.favorites__info {
   font-weight: 700;
   line-height: normal;
   margin-left: 20px;
-  margin-top: 58px;
+  margin-top: 40px;
 }
 
 .radio {
@@ -375,7 +377,9 @@ input {
 }
 
 .radio__btn {
-  margin-top: 36px;
+  margin-top: 30px;
+  margin-left: -4px;
+
 }
 
 .real__radio-btn {
@@ -386,15 +390,16 @@ input {
 }
 
 .label__radio-btn {
-  margin-right: 68px;
+  margin-right: 60px;
   margin-top: 5px;
+  padding: 5px 5px;
 }
 
 .custom__radio-btn {
   display: inline-block;
   position: relative;
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   background: #fff;
   border: 2px solid #000;
   border-radius: 50%;
@@ -433,7 +438,7 @@ input {
 
 .first__book {
   min-width: 550px;
-  margin: 38px 60px 0px 20px;
+  margin: 34px 60px 0px 17px;
   border: 1px solid #000000;
 }
 
@@ -449,7 +454,7 @@ h3.staff__picks {
   text-transform: capitalize;
   text-align: start;
   margin-top: 15px;
-  margin-left: 17px;
+  margin-left: 20px;
 }
 
 h3.staff__picks::after {
@@ -588,7 +593,7 @@ h3.coffe-shop__subtitle {
   letter-spacing: 2px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 60px;
+  margin-top: 43px;
 }
 
 /*style coffe-tea menu start!*/
@@ -651,6 +656,7 @@ h3.coffe-shop__subtitle {
   letter-spacing: 2px;
   text-transform: capitalize;
   list-style-type: none;
+  margin-left: 3px;
 }
 
 /*style coffe-tea menu end!*/
@@ -675,6 +681,7 @@ h3.coffe-shop__subtitle {
   text-transform: capitalize;
   list-style-type: none;
   text-align: end;
+  margin-right: 5px;
 }
 
 .dessert__list {
@@ -728,7 +735,7 @@ h3.coffe-shop__subtitle {
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
-  margin-top: 60px;
+  margin-top: 38px;
 }
 
 .contact__item {
@@ -826,6 +833,7 @@ h3.coffe-shop__subtitle {
   height: 386px;
   border: 3px solid;
   border-color: #bb945f;
+  box-shadow: 0px 7px 6px 0px rgba(142, 144, 146, 0.37);
 }
 
 .library-card__bg {
@@ -857,11 +865,10 @@ h3.coffe-shop__subtitle {
 }
 
 .find-card__label {
-  width: 520px;
+  width: 520px; 
 }
 
 .find-card__text {
-  height: 66px;
   padding: 5px 20px;
   color: #8e8e8e;
   font-family: Forum;
@@ -870,12 +877,13 @@ h3.coffe-shop__subtitle {
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 0.6px;
-  margin-top: 28px;
+  margin-top: 24px;
+  margin-bottom: 5px;
   margin-left: 1px;
-  border: 1px solid;
+  border: none;
   border-radius: 10px;
   width: 100%;
-  transition: ease-in 0.3s
+  transition: ease-in-out 0.3s
 }
 
 .find-card__text:hover {
@@ -896,9 +904,8 @@ h3.coffe-shop__subtitle {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  border-radius: 2px;
   border: 1px solid #0c0c0e;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: ease-in 0.3s;
 }
 
@@ -918,7 +925,7 @@ h3.coffe-shop__subtitle {
   letter-spacing: 0.6px;
   margin-left: 158px;
   margin-bottom: 30px;
-  margin-top: 61px;
+  margin-top: 30px;
 }
 .find-library__card {
   margin-left: 20px;
@@ -932,7 +939,7 @@ h3.coffe-shop__subtitle {
 .left-cards__block {
   display: flex;
   text-align: end;
-  margin-top: 61px;
+  margin-top: 30px;
 }
 
 .get__card {
@@ -968,9 +975,9 @@ h3.coffe-shop__subtitle {
 
 .get-card__btn {
   padding: 10px 15px;
-  border-radius: 2px;
+  border-radius: 4px;
   border: 1px solid #0c0c0e;
-  margin-right: 19px;
+  margin-right: 20px;
   margin-top: 35px;
   transition: ease-out 0.25s;
   color: #0c0c0e;
@@ -987,7 +994,6 @@ h3.coffe-shop__subtitle {
 .get-card__btn:active {
   background-color: #bb945f;
   cursor: pointer;
-  transform: scale(1.15);
 }
 
 /*style digital library cards end!*/
