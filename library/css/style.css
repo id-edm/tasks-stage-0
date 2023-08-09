@@ -76,7 +76,7 @@ p {
   align-items: center;
   justify-content: space-between;
   color: rgba(255, 255, 255, 1);
-  padding: 16px 20px;
+  padding: 19px 20px 13px 20px;
 }
 
 .header__nav__position {
@@ -280,6 +280,25 @@ h2::after {
 h2:hover::after {
   width: 100px;
   transition: ease-out 1s;
+}
+
+.wrapper-slider__btn {
+  display: flex;
+  align-items: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  border: none;
+  display: none;
+}
+
+.slider__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
 }
 
 .carousel__pagination {
@@ -1207,7 +1226,7 @@ h3.coffe-shop__subtitle {
 
   .wrapper__map {
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 85px;
   }
 
   .library__cards {
@@ -1229,7 +1248,7 @@ h3.coffe-shop__subtitle {
     flex-direction: column;
     gap: 30px 0;
     padding: 10px 107px 100px 107px;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 90px;
     z-index: 100;
@@ -1248,6 +1267,7 @@ h3.coffe-shop__subtitle {
   }
   .header__nav {
     order: 1;
+    margin: 0;
   }
   .header__item {
     margin: 0 auto;
@@ -1270,6 +1290,14 @@ h3.coffe-shop__subtitle {
   .carousel__pagination {
     margin-top: 25px;
   }
+
+  .wrapper-slider__btn {
+    display:flex;
+  }
+
+  .carousel__button-none {
+    display: flex;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1285,6 +1313,11 @@ h3.coffe-shop__subtitle {
     justify-content: center;
   }
 
+  .about__info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .get-card__title {
     text-align: center;
   }
@@ -1292,4 +1325,12 @@ h3.coffe-shop__subtitle {
   .get-card__info {
     text-align: center;
   }
+
+  .coffee-tea__menu {
+    margin-bottom: 8px;
+  }
+  .wrapper__map {
+    margin-left: 0;
+  }
+
 }
