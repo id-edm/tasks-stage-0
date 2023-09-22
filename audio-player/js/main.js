@@ -96,5 +96,32 @@ function setProgress(e) {
 }
 progressArea.addEventListener('click', setProgress)
 
+    //autoplay
+audio.addEventListener('ended', nextMusic)
+
+    //duration music
+audio.addEventListener('timeupdate',(e) => {
+    const currentTime = e.target.currentTime;
+    const duration = e.target.duration;
+    let musicCurrentTime = document.querySelector('.curren-time'),
+        musicDuration = document.querySelector('.max-duration');
+    audio.addEventListener('loadeddata',() => {
+        let mainAdDuration = audio.duration;
+        let totalMin = Math.floor(mainAdDuration / 60);
+        let totalSec = Math.floor(mainAdDuration % 60);
+            if(totalSec < 10) {
+                totalSec = `0${totalSec}`;
+            }
+        musicDuration.innerHTML = `${totalMin}:${totalSec}`;
+    });
+        let currentMin = Math.floor(currentTime / 60);
+        let currentSec = Math.floor(currentTime % 60);
+            if(currentSec < 10) {
+                currentSec =`0${currentSec}`;
+            }
+        musicCurrentTime.innerHTML =`${currentMin}:${currentSec}`;
+})
+
+
 
 
