@@ -45,6 +45,8 @@
 }
 
 .cover__music {
+    width: 250px;
+    height: 200px;
     display: flex;
     justify-content: center;
     margin: 25px;
@@ -56,9 +58,13 @@
     width: 200px;
 }
 
+.active {
+    animation: myAnim 2s infinite linear;
+}
+
 .song__name {
     font-family:  Roboto-Bold;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -106,13 +112,19 @@
 
 .btn-controls img {
     float:left;
-    width:32px;
-    align-items: center;
+    width:50px;
     cursor: pointer;
 
 }
 
-.svg-play {
+.play-pause {
+    border: 2px solid  rgb(39, 131, 170);
+    border-radius: 50%;
+}
+
+/* стили SVG для кнопки play*/
+
+/*.svg-play {
     width: 50px;
     height: 50px; 
     fill: #ffc048;
@@ -123,6 +135,7 @@
     fill: rgb(39, 131, 170);
     cursor: pointer;   
 }
+*/
 
 svg {
     width: 30px;
@@ -137,5 +150,51 @@ svg:hover {
     fill: rgb(39, 131, 170);
     cursor: pointer;
     border: 2px solid #ffc048;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	10% {
+		transform: translate(-2px, -2px);
+	}
+
+	20% {
+		transform: translate(2px, -2px);
+	}
+
+	30% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	50% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, -2px);
+	}
+
+	70% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	90% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
 }
 

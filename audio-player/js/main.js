@@ -6,7 +6,7 @@ const player = document.querySelector('.audio__player'),
     progressBar = document.querySelector('.progress__bar'),
     prevBtn = document.querySelector('.prev-btn'),
     playBtn = document.querySelector('.play-btn'),
-    nextBtn = document.querySelector('.nextBtn'),
+    nextBtn = document.querySelector('.next-btn'),
     imgPlayPause = document.querySelector('.play-pause')
 
     //name songs
@@ -27,12 +27,16 @@ loadSong(songs[songIndex])
     //play
 function playMusic() {
     player.classList.add('play')
+    coverMusic.classList.add('active')
+    imgPlayPause.src = 'assets/icons/pause.svg'
     audio.play()
 }
 
-//pause
+    //pause
  function pauseMusic() {
     player.classList.remove('play')
+    coverMusic.classList.remove('active')
+    imgPlayPause.src = 'assets/icons/play.svg'
     audio.pause()
 }
 
@@ -44,6 +48,35 @@ playBtn.addEventListener('click',() => {
         playMusic()
     }
 })
+
+    //next music
+function nextMusic() {
+    songIndex++
+
+    if (songIndex > songs.length - 1) {
+        songIndex = 0
+    }
+
+    loadSong(songs[songIndex])
+    playMusic()
+}
+
+nextBtn.addEventListener('click', nextMusic)
+
+     //next music
+function prevMusic(){
+    songIndex--
+
+    if(songIndex < 0) {
+        songIndex = songs.length - 1
+    }
+
+    loadSong(songs[songIndex])
+    playMusic()
+}
+
+prevBtn.addEventListener('click', prevMusic)
+
 
 
 
