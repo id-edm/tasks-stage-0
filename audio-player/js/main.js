@@ -77,7 +77,24 @@ function prevMusic(){
 
 prevBtn.addEventListener('click', prevMusic)
 
+     //progress bar
+function updProgressBar(e) {
+    const {duration, currentTime} = e.srcElement
+    const progressPercent = (currentTime / duration) * 100
+    progressBar.style.width = `${progressPercent}%`
+}
 
+audio.addEventListener('timeupdate', updProgressBar)
+
+    //set progress
+function setProgress(e) {
+    const width = this.clientWidth
+    const clickX = e.offsetX
+    const duration = audio.duration
+
+    audio.currentTime = (clickX / width) * duration
+}
+progressArea.addEventListener('click', setProgress)
 
 
 
