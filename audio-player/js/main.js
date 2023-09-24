@@ -7,8 +7,10 @@ const player = document.querySelector('.audio__player'),
     prevBtn = document.querySelector('.prev-btn'),
     playBtn = document.querySelector('.play-btn'),
     nextBtn = document.querySelector('.next-btn'),
-    imgPlayPause = document.querySelector('.play-pause')
-
+    imgPlayPause = document.querySelector('.play-pause'),
+    recentMusic = document.querySelector('volume'),
+    volumeShow = document.querySelector('#volume_show')
+    
     //name songs
 const songs = ['Каста - Вокруг шум','Иванушки  International - Тополиный пух','Геннадий Рождественский - Щелкунчик']
 
@@ -121,6 +123,8 @@ audio.addEventListener('timeupdate',(e) => {
             }
         musicCurrentTime.innerHTML =`${currentMin}:${currentSec}`;
 })
+
+
 
 
 
