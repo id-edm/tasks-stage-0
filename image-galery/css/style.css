@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Ubuntu-Regular ;
+    src: url('../assets/fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url('../assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url('../assets/fonts/Ubuntu-Bold.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Ubuntu-Regular;
+}
+
+body{
+
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+}
