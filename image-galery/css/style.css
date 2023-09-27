@@ -18,9 +18,22 @@
     font-family: Ubuntu-Regular;
 }
 
-body {}
+body {
+
+}
 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto__camera {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.title__inner{
     font-size: 32px;
     font-weight: 900;
     text-align: center;
