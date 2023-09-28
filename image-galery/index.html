@@ -6,51 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Image-Galery</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <title>Image-galery</title>
 </head>
 
 <body>
-    <header>
+    <div class="wrapper">
 
-        <div class="title">
-            <img  src="./assets/icon/camera.svg" alt="foto-camera" class="foto__camera">
-            <h1 class="title__inner">Image Galery API</h1>
-        </div>
+        <header>
 
-        <form class="search" action="url">
-            <input class="search__input" type="text" placeholder="Enter for image search">
-            <button class="search__btn">Search</button>
-        </form>
+            <div class="title">
+                <img src="./assets/icon/camera.svg" alt="foto-camera" class="foto__camera">
+                <h1 class="title__inner">Image Galery API</h1>
+            </div>
 
-    </header>
-    <section class="image__galery">
+            <form class="search" action="url">
+                <input class="search__input" type="text" placeholder="Enter for image search">
+                <button class="search__btn">Search</button>
+            </form>
 
-        <div class="results">
-            <div class="results__search">
-                <img class="results__search_img"
-                    src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1490&q=80"
-                    alt="Basketball">
+        </header>
+
+        <main class="image__galery">
+
+            <div class="results">
+                <div class="results__search">
+                    <img class="results__search_img"
+                        src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1490&q=80"
+                        alt="Basketball">
+
+                </div>
+                <div class="results__search">
+                    <img class="results__search_img"
+                        src="https://images.unsplash.com/photo-1577416412292-747c6607f055?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Basketball">
+
+                </div>
+                <div class="results__search">
+                    <img class="results__search_img"
+                        src="https://images.unsplash.com/photo-1602357280104-742c517a1d82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1550&q=80"
+                        alt="Basketball">
+
+                </div>
 
             </div>
-            <div class="results__search">
-                <img class="results__search_img"
-                    src="https://images.unsplash.com/photo-1577416412292-747c6607f055?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                    alt="Basketball">
-                    
-            </div>
-            <div class="results__search">
-                <img class="results__search_img"
-                    src="https://images.unsplash.com/photo-1602357280104-742c517a1d82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1550&q=80"
-                    alt="Basketball">
-                    
-            </div>
-        </div>
 
-    </section>
-    <footer>
-        
-    </footer>
-<script src="./main.js"></script>
+        </main>
+
+        <footer class="footer">
+            <a href="https://github.com/id-edm">
+                <img class="github-img" src="./assets/icon/github.svg" alt="GitHub" width="40" height="40">
+
+            </a>
+
+            <p class="created_date"> September 2023</p>
+
+            <a href="https://rs.school/js-stage0/">
+                <img src="https://rs.school/images/rs_school_js.svg" width="70" height="50" alt="RsSchool">
+            </a>
+
+        </footer>
+    </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
