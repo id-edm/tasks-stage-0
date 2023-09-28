@@ -70,13 +70,11 @@ body {
 .search {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
     align-items: center;
 }
 
 .search__input {
-    max-width: 500px;
-    width: 50%;
+    width: 100%;
     box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.2);
     border: none;
     font-size: 16px;
@@ -103,6 +101,53 @@ body {
     background-color: rgb(93, 201, 231);
     color: black;
 }
+/*  start крестик для очистки инпута*/
+
+.wrapper__input {
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.clear {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    transform: rotate(45deg); 
+    transition: background-color, 0.2s ease-in;
+    background: rgb(175, 180, 200); 
+}
+
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    transform: rotate(-45deg);
+    transition: background-color, 0.2s ease-in;
+    background: rgb(175, 180, 200);  
+}
+
+.clear:hover::after {
+    background-color: black;
+}
+
+.clear:hover::before {
+    background: black;
+}
+
+/*  end крестик для очистки инпута*/
 
 .search__btn:active {
     background-color: rgb(57, 167, 201);

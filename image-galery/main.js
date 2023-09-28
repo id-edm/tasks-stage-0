@@ -71,4 +71,17 @@ window.addEventListener('scroll', () => {
     lastScroll = scrollPosition();
 })
 
+// Крестик очишающий запросы в инпуте
+
+function clearSearch() {
+    document.getElementById('search_id').value = '';
+  }
+
+// Курсор в поле ввода
+
+function setFocus() {
+    document.getElementById('search_id').focus();
+}
+
+
 

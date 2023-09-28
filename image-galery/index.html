@@ -10,7 +10,7 @@
     <title>Image-galery</title>
 </head>
 
-<body>
+<body onload="setFocus()">
     <div class="wrapper">
 
         <header class="header">
@@ -21,8 +21,13 @@
             </div>
 
             <form class="search" action="url">
-                <input class="search__input" type="text" placeholder="Enter for image search . . . ">
-                <button class="search__btn">Search</button>
+
+                <div class="wrapper__input">
+                    <input class="search__input" type="text" placeholder="Enter for image search . . . " id="search_id" autocomplete="off">
+                    <span class="clear" onclick="clearSearch()"></span>
+                </div>
+                    <button class="search__btn" >Search</button>
+                    
             </form>
 
         </header>
