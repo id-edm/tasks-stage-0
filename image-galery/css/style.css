@@ -25,7 +25,6 @@ body {
 
 body {
     line-height: 1.8;
-    background-color: rgb(230, 221, 221);
 }
 
 .wrapper {
@@ -34,8 +33,20 @@ body {
     flex-direction: column;
     max-width: 1320px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: rgb(230, 221, 221);
+}
+
+.header {
+    position: sticky;
+    height: 200px;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(168, 168, 168, 0.5);
+    transition: transform 0.8s linear;
+}
+
+.header.hide {
+    transform: translateY(-200px);
 }
 
 .title {
@@ -99,6 +110,7 @@ body {
 
 .image__galery {
     flex-grow: 1;
+    margin-top: 20px;
 }
 
 .results {
@@ -125,13 +137,14 @@ body {
 
 .results__search img:hover {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(168, 168, 168, 0.5);
     margin-top: 30px;
     font-size: 20px;
 }

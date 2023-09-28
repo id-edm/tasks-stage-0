@@ -4,6 +4,7 @@ const search = document.querySelector('.search');
 const searchInput = document.querySelector('.search__input');
 const resultsSearch = document.querySelector('.results')
 
+
 let getData = '';
 let page = 1;
 
@@ -41,4 +42,33 @@ search.addEventListener('submit',(event) => {
     searchImages();
 
 });
+
+
+
+// Срывающийся header 
+
+const header = document.querySelector('.header');
+const defaultOffset = 100; // для исчезновнения header
+
+let lastScroll = 0;
+
+// Определяем позицию скрола
+
+const scrollPosition = () =>  window.scrollY || document.documentElement.scrollTop;
+const containHide= () => header.classList.contains('hide');
+
+window.addEventListener('scroll', () => {
+
+    if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+    //прокручиваем вниз
+    header.classList.add('hide');
+    } 
+    else if (scrollPosition() < lastScroll && containHide()) {
+    //прокручиваем вверх
+    header.classList.remove('hide');
+    }
+    
+    lastScroll = scrollPosition();
+})
+
 
