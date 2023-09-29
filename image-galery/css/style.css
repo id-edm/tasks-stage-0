@@ -166,7 +166,8 @@ body {
 
 .results {
     column-count: 3;
-    padding: 0 30px ;
+    padding: 0 30px;
+    margin-bottom: 20px;
 }
 
 .results__search {
