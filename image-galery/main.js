@@ -8,7 +8,7 @@ const resultsSearch = document.querySelector('.results')
 let getData = '';
 let page = 1;
 
-// Поиск картинок
+// Search for images by request in the input
 async function searchImages (){
     getData = searchInput.value;
     const url = `https://api.unsplash.com/search/photos?query=${getData}
@@ -25,10 +25,9 @@ async function searchImages (){
    
     results.map((result) => {
         const imageWrapper = document.createElement('div');
-        imageWrapper.classList.add ('results__search');
         const image = document.createElement('img');
+        imageWrapper.classList.add ('results__search');
         image.src = result.urls.small;
-        image.alt = result.description;
 
         imageWrapper.appendChild(image);
         resultsSearch.appendChild(imageWrapper);
@@ -43,42 +42,36 @@ search.addEventListener('submit',(event) => {
 
 });
 
-
-
-// Срывающийся header 
-
+// Breaking header
 const header = document.querySelector('.header');
-const defaultOffset = 100; // для исчезновнения header
+const defaultOffset = 100; 
 
 let lastScroll = 0;
 
-// Определяем позицию скрола
-
+// Determining the scroll position
 const scrollPosition = () =>  window.scrollY || document.documentElement.scrollTop;
 const containHide= () => header.classList.contains('hide');
 
 window.addEventListener('scroll', () => {
 
     if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-    //прокручиваем вниз
+    // scroll down
     header.classList.add('hide');
     } 
     else if (scrollPosition() < lastScroll && containHide()) {
-    //прокручиваем вверх
+    // scroll up
     header.classList.remove('hide');
     }
     
     lastScroll = scrollPosition();
 })
 
-// Крестик очишающий запросы в инпуте
-
+// Cross clearing requests in input
 function clearSearch() {
     document.getElementById('search_id').value = '';
   }
 
-// Курсор в поле ввода
-
+// Cursor in input field
 function setFocus() {
     document.getElementById('search_id').focus();
 }
