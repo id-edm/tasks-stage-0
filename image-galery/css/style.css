@@ -212,7 +212,7 @@ footer {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     .results {
         column-count: 1;
         padding: 0 10px ;
