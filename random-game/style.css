@@ -1,20 +1,20 @@
 
 @font-face {
     font-family: 'Ubuntu-Light';
-    src: url(./fonts/Ubuntu-Light.ttf);
+    src: url(./assets/fonts/Ubuntu-Light.ttf);
     font-weight: 300;
   }
   
 @font-face {
     font-family: 'Ubuntu-Medium';
-    src: url(./fonts/Ubuntu-Medium.ttf);
+    src: url(./assets//fonts/Ubuntu-Medium.ttf);
     font-style: italic;
     font-weight: 500;
   }
   
 @font-face {
     font-family: 'Ubuntu-Bold';
-    src: url(./fonts/Ubuntu-Bold.ttf);
+    src: url(./assets//fonts/Ubuntu-Bold.ttf);
     font-weight: 700;
   }
 
@@ -24,26 +24,41 @@
     box-sizing: content-box;
   }
 
+  html,
+  body {
+    height: 100%;
+}
+
   body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100%;
     background-color: rgba(100, 92, 92, 0.39);
     color: white; 
   }
 
-  .wrapper {
-    position: relative;
-    width: 600px;
-    height: 600px;
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+   
   }
 
-  #convas {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1024px;
+    height: 400px;
+    flex-grow: 1;
+    
+  }
+
+  #canvas {
     position: absolute;
-    left: 0;
-    bottom: 0;
   }
 
   .game__score {
@@ -53,3 +68,18 @@
     font-size: 18px;
     font-family: 'Ubuntu-Medium' ;
   }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(168, 168, 168, 0.5);
+    font-family: 'Ubuntu-Light';
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+  
+
+
+  
