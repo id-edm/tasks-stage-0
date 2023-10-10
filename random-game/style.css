@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(./assets/fonts/Ubuntu-Light.ttf);
+    font-weight: 300;
+  }
+  
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(./assets//fonts/Ubuntu-Medium.ttf);
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(./assets//fonts/Ubuntu-Bold.ttf);
+    font-weight: 700;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+}
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: rgba(100, 92, 92, 0.39);
+    color: white; 
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: aquamarine;
+   
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(167, 109, 22);
+    width: 1024px;
+    height: 400px;
+    flex-grow: 1;
+    
+  }
+
+  #canvas {
+    position: absolute;
+  }
+
+  .game__score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    font-family: 'Ubuntu-Medium' ;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(168, 168, 168, 0.5);
+    font-family: 'Ubuntu-Light';
+    color: black;
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+  
+
+
+  
