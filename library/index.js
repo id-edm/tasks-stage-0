@@ -1,15 +1,20 @@
-console.log (`1.Вёрстка валидная +10
-\n
-2.Вёрстка семантическая +16
-\n
-3.Вёрстка соответствует макету +54
-	1.блок <header> +8
-	2.екция Welcome +4
-	3.секция About +6
-	4.секция Favorites +8
-	5.секция CoffeShop +6
-	6.секция Contacts +6
-	7.секция LibraryCard +8
-	8.блок <footer> +8
-\n
-4.Общие требования к верстке +20`);
+const menuBtn = document.querySelector('.burger__btn');
+const menuMobile = document.querySelector('.header__list');
+const body = document.body;
+const navItem = menuMobile.querySelectorAll('.header__item');
+
+
+menuBtn.addEventListener('click',()=> {
+	body.classList.toggle('scroll--stop')
+	menuBtn.classList.toggle('burger--transform');
+	menuMobile.classList.toggle('burger--open');
+});
+
+navItem.forEach(element => {
+	element.addEventListener("click",()=> {
+		body.classList.remove('scroll--stop')
+		menuBtn.classList.remove('burger--transform');
+		menuMobile.classList.remove('burger--open');
+	});
+});
+
