@@ -1221,8 +1221,13 @@ h3.coffe-shop__subtitle {
 
 @media (max-width: 1390px) {
   .about__item-3 {
-    display: none;
     margin: 0;
+  }
+
+  .about__items{
+    width: 900px;
+    overflow: hidden;
+    position: relative;
   }
 }
 
@@ -1283,6 +1288,12 @@ h3.coffe-shop__subtitle {
 }
 
 @media (max-width: 940px) {
+
+  .about__items{
+    width: 450px;
+    overflow: hidden;
+  }
+
   .menu {
     flex-wrap: wrap;
   }
@@ -1291,7 +1302,6 @@ h3.coffe-shop__subtitle {
     margin-left: auto;
   }
   .about__item-2 {
-    display: none;
     margin-left: 0;
     margin-right: 0;
   }
